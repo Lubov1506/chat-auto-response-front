@@ -1,0 +1,23 @@
+.chat_page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  aside {
+    min-width: 300px;
+    width: 30vw;
+    border-right: 1px solid var(--border-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main {
+    div {
+      height: 100%;
+    }
+    width: 100%;
+    min-width: 450px;
+    background-color: var(--light-bgc);
+  }
+}

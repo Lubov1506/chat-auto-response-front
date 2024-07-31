@@ -1,0 +1,41 @@
+.wrapper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.content {
+  position: relative;
+  background-color: white;
+  padding: 20px 35px;
+  overflow: hidden;
+  max-width: 1000px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h1 {
+    font-size: 1.4rem;
+    color: var(--dark-msg);
+  }
+  z-index: 101;
+}
+.closeBtn {
+  position: absolute;
+
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color var(--transition-pattern);
+  .close_icon:hover,
+  .close_icon:focus {
+    color: var(--btn-hover);
+  }
+}

@@ -1,0 +1,17 @@
+.custom_btn {
+  z-index: 10;
+  padding: 5px;
+  color: var(--dark-msg);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+
+  &hover,
+  &focus {
+    color: var(--btn-hover);
+  }
+}

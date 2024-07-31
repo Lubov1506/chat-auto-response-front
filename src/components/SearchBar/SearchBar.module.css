@@ -1,0 +1,25 @@
+.search_bar {
+  position: relative;
+  span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+  }
+}
+.search_bar input {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 30px;
+  width: 100%;
+  outline: none;
+  transition: border-color var(--transition-pattern);
+
+  &:hover,
+  &:focus {
+    border-color: var(--dark-msg);
+  }
+}
